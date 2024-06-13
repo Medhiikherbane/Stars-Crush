@@ -1,5 +1,6 @@
 import Header from "./header"
 import { useEffect, useState } from "react"
+import "./search.css"
 
 function Search() {
     const [starwarsSearch, setStarwarsSearch] = useState([]);
@@ -11,9 +12,9 @@ function Search() {
     }, [])
     return (
       <>
-      
-       <div>
-       <Header />
+      <Header />
+       <div className="div_search">
+       
         Je suis dans recherche
         {starwarsSearch.map(element => {
             return <div>
