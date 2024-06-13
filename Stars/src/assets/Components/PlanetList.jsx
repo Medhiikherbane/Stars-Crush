@@ -6,31 +6,31 @@ const planets = [
   {
     name: 'Tatooine',
     description: 'A desert planet and the birthplace of Anakin Skywalker.',
-    image: ''
+    image: '../Images/Tatoooinefull.webp'
   },
   {
     name: 'Hoth',
     description: 'An icy planet, known for the Battle of Hoth.',
-    image: ''
+    image: '../Images/planete_hoth.jpg'
   },
   {
     name: 'Endor',
     description: 'A forest moon inhabited by Ewoks.',
-    image: ''
+    image: '../Images/PlanetEndor.jpg'
   },
   {
     name: 'Naboo',
     description: 'A beautiful planet with lakes and forests, home to Padmé Amidala.',
-    image: ''
+    image: '../Images/Naboo.png'
   },
   {
     name: 'Coruscant',
     description: ' La planète entière est une immense ville.',
-    image: ''
+    image: '../Images/Coruscant.webp'
   }
 ];
 
-const PlanetList = () => {
+function PlanetList () {
   return (
     <div className="planet-list">
       {planets.map((planet, index) => (
