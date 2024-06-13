@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './header';
 import SearchFilter from './SearchFilter';
 import './search.css';
+import DisplayCard from './displayCard';
 
 const Search = () => {
   const [starwarsData, setStarwarsData] = useState([]);
@@ -33,19 +34,28 @@ const Search = () => {
 
     setFilteredData(filtered);
   };
-
   return (
-    <div>
+    
+    <div >
       <Header />
       <SearchFilter onFilterChange={handleFilterChange} data={starwarsData} />
       <div className="search-results">
-        {filteredData.map((element) => (
-          <div key={element.name} className="search-result">
-            <img src={element.image} alt={element.name} className="character-image" />
-            <p>{element.name}</p>
-          </div>
-        ))}
+        {starwarsData.map((character) => {
+
+        return (
+            <div>
+                <DisplayCard
+                key={character.id}
+                name={character.name}
+                image={character.image}
+                id={character.id}
+            />
+            </div>
+  
+            );
+            })}
       </div>
+      
     </div>
   );
 };
