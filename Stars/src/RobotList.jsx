@@ -25,7 +25,7 @@ const robotList = [
   },
   {
     name: "K-2SO",
-    imgSrc: "https://static.wikia.nocookie.net/frstarwars/images/1/1e/Dro%C3%AFde_de_s%C3%A9curit%C3%A9_de_s%C3%A9rie_KX.png/revision/latest?cb=20170304082226",
+    imgSrc: "./Images/K-2SO.webp",
     type: "Security Droid",
     function: "Sécurité et Espionnage",
     originPlanet: "Inconnu",

@@ -4,7 +4,7 @@ import VehicleCard from './VehicleCard';
 const vehicleList = [
   {
     name: "X-Wing Starfighter",
-    imgSrc: "https://starwars-visualguide.com/assets/img/vehicles/12.jpg",
+    imgSrc: "./Images/Xwing-Starfighter.webp",
     type: "Chasseur stellaire",
     fuel: "Tibanna gaz",
     speed: 1050,
@@ -12,7 +12,7 @@ const vehicleList = [
   },
   {
     name: "TIE Fighter",
-    imgSrc: "https://starwars-visualguide.com/assets/img/vehicles/13.jpg",
+    imgSrc: "./Images/Tie Fighter.jpeg",
     type: "Chasseur stellaire",
     fuel: "Tibanna gaz",
     speed: 1200,
