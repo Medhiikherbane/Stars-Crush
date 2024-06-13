@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+/* PlanetList */
+
+.planet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}

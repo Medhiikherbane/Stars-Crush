@@ -1,0 +1,26 @@
+/* src/components/PlanetCard.css */
+.planet-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    padding: 16px;
+    text-align: center;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .planet-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .planet-card h3 {
+    margin-top: 8px;
+  }
+  
+  .planet-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
