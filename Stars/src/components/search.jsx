@@ -35,29 +35,25 @@ const Search = () => {
     setFilteredData(filtered);
   };
   return (
-    
-    <div >
+    <div>
       <Header />
       <SearchFilter onFilterChange={handleFilterChange} data={starwarsData} />
       <div className="search-results">
-        {starwarsData.map((character) => {
+        {filteredData.map((element) => (
+            <DisplayCard
+                key={element.id}
+                name={element.name}
+                image={element.image}
+                id={element.id}
+            />  
+    
+        ))}
+        
 
-        return (
-            <div>
-                <DisplayCard
-                key={character.id}
-                name={character.name}
-                image={character.image}
-                id={character.id}
-            />
-            </div>
-  
-            );
-            })}
       </div>
-      
     </div>
   );
 };
 
 export default Search;
+
