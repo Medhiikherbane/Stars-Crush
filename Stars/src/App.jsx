@@ -7,24 +7,21 @@ import RobotList from './RobotList';
 import VehicleList from './VehicleList';
 import './App.css';
 
-const App = () => {
-  return (
-    <div className="App">
-      <h1>Star Wars Robots</h1>
-      <RobotList />
-      <h1>Star Wars Vehicles</h1>
-      <VehicleList />
-    </div>
-  );
-};
 
-export default App;
+    
+  
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div className="App">
+      <h1>Star Wars Robots</h1>
+      <RobotList />
+      <h1>Star Wars Vehicles</h1>
+      <VehicleList />
+    </div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
