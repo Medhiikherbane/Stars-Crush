@@ -10,7 +10,6 @@ function BlocCard() {
         .then((result) => console.log(result) || setCharacters(result)) 
     }, [])
 
-)
   return (
       <>
         <div>je vais</div>
