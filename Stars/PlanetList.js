@@ -6,22 +6,27 @@ const planets = [
   {
     name: 'Tatooine',
     description: 'A desert planet and the birthplace of Anakin Skywalker.',
-    image: 'https://starwars-visualguide.com/assets/img/planets/1.jpg'
+    image: ''
   },
   {
     name: 'Hoth',
     description: 'An icy planet, known for the Battle of Hoth.',
-    image: 'https://starwars-visualguide.com/assets/img/planets/4.jpg'
+    image: ''
   },
   {
     name: 'Endor',
     description: 'A forest moon inhabited by Ewoks.',
-    image: 'https://starwars-visualguide.com/assets/img/planets/7.jpg'
+    image: ''
   },
   {
     name: 'Naboo',
     description: 'A beautiful planet with lakes and forests, home to Padmé Amidala.',
-    image: 'https://starwars-visualguide.com/assets/img/planets/8.jpg'
+    image: ''
+  },
+  {
+    name: 'Coruscant',
+    description: ' La planète entière est une immense ville.',
+    image: ''
   }
 ];
 
