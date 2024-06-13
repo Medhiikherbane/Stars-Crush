@@ -40,3 +40,65 @@
 .read-the-docs {
   color: #888;
 }
+.App {
+  text-align: center;
+}
+/* RobotList */
+.robot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.robot-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+.robot-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.robot-card h2 {
+  font-size: 1.5em;
+}
+
+.robot-card p {
+  margin: 5px 0;
+}
+.App {
+  text-align: center;
+}
+/* VehicleList */
+.robot-list, .vehicle-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.robot-card, .vehicle-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+.robot-card img, .vehicle-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.robot-card h2, .vehicle-card h2 {
+  font-size: 1.5em;
+}
+
+.robot-card p, .vehicle-card p {
+  margin: 5px 0;
+}
