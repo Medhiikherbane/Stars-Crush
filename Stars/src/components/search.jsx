@@ -1,5 +1,6 @@
 import Header from "./header"
 import { useEffect, useState } from "react"
+import "./search.css"
 
 function Search() {
     const [starwarsSearch, setStarwarsSearch] = useState([]);
