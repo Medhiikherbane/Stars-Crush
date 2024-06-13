@@ -9,7 +9,7 @@ function Header() {
         <img className="logoNavbar" src={logoImage} alt="logo" />
         <ul className="link_page">
           <li className="link_item">
-            <Link className="link_item_clic" to="/home" >Home</Link>
+            <Link className="link_item_clic" to="/" >Home</Link>
           </li>
           <li className="link_item">
             <Link className="link_item_clic" to="/search">Search</Link>
