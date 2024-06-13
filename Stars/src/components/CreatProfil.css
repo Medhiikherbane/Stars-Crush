@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vh;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr;
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    background-image: url('../Images/starsky.jpg');
+    background-size: cover;
+
+    img {
+        width: 50px;
+    }
+
+}
