@@ -40,7 +40,8 @@ const Search = () => {
       <SearchFilter onFilterChange={handleFilterChange} data={starwarsData} />
       <div className="search-results">
         {filteredData.map((element) => (
-          <div key={element.id} className="search-result">
+          <div key={element.name} className="search-result">
+            <img src={element.image} alt={element.name} className="character-image" />
             <p>{element.name}</p>
           </div>
         ))}
