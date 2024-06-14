@@ -6,7 +6,7 @@ import Search from './components/search.jsx'
 import Profile from './components/profile.jsx'
 import './index.css'
 import CreatProfil from './components/CreatProfil.jsx'
-
+import Planet from './components/Planet.jsx'
 
 
 
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/creatProfil",
     element: <CreatProfil />
+  },
+  {
+    path: "/planet",
+    element: <Planet />
   },
 ])
 

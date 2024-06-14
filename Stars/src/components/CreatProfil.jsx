@@ -1,8 +1,8 @@
 
 import "./CreatProfil.css"
-import mansit from "../Images/mansit.png"
-import ladyGalaxy from "../Images/faceGalaxy.png"
-import logo from '../Images/LogoOfficial.png'
+import mansit from "/Images/mansit.png"
+import ladyGalaxy from "/Images/faceGalaxy.png"
+import logo from '/Images/LogoOfficial.png'
 import Profil from "./Profil";
 import Preference from "./Preference";
 
