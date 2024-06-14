@@ -9,7 +9,7 @@
   position: relative;
   z-index: 1000;
   overflow: hidden;
-  background: url(./Images/bg.jpg);
+  background: url(../public/Images/Planet2.webp);
   background-size: cover;
 }
 
@@ -26,7 +26,8 @@
 #img1{
   position: absolute;
   transform: translateX(-50%);
-  z-éindex: 100;
+  z-index: 100;
+
 }
 #img2{
   position: absolute;

@@ -1,8 +1,8 @@
 import React,{useState} from "react";
 import './App.css';
-import img1 from './Images/img1.png'
-import img2 from './Images/img2.png'
-import text from './Images/text.png'
+import img1 from '../public/Images/Naboo2.png'
+import img2 from '../public/Images/Xwing-Starfighter.webp'
+import text from '../public/Images/text.png'
 
 function App() {
     const [offset, setOffset] = useState()
@@ -14,11 +14,11 @@ window.addEventListener('scroll', handleScroll)
         <div className="App">
         <div className="zoom">
 <img src={img1} alt="" id="img1"
-style={{width:(100 + offset * 0.3) + "%"}}
+style={{width:(77 + offset * -0.1) + "%"}}
 />
-<img src={img2} alt="" id="img2"style={{width:(100 + offset * 0.3) + "%"}}/>
+<img src={img2} alt="" id="img2"style={{width:(4 + offset * 1.1) + "%"}}/>
 <img src={text} alt="" id="text"
-style={{ top:`-${10 + offset * 0.3 + '%'}`}}
+style={{ top:`-${5 + offset * 0.1 + '%'}`}}
 />
 </div>
 
