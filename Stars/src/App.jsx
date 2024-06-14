@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Header from './components/header'
 import './App.css'
 import React from 'react'
 import { Link } from "react-router-dom"
@@ -11,6 +12,10 @@ function App() {
         <Link className="link_item_clic" to="/creatProfil" >Create your profil</Link>
 
       </div>
+      <div>
+        <Header />
+      </div>
+
     </>
   )
 }
