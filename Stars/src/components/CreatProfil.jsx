@@ -18,7 +18,9 @@ function CreatProfil() {
                 </div>
             </section>
             <section className="middle">
-                <Preference />
+                <div className="casePref">
+                    <Preference />
+                </div>
             </section>
             <section className="bottom">
                 <img className="manSit" src={mansit} alt="man sitting" />

@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import '../src/components/CreatProfil'
-import CreatProfil from '../src/components/CreatProfil'
 import React from 'react'
-
+import { Link } from "react-router-dom"
 function App() {
 
 
   return (
     <>
       <div>
-        <CreatProfil />
+        <Link className="link_item_clic" to="/creatProfil" >Create your profil</Link>
+
       </div>
     </>
   )

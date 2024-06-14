@@ -28,21 +28,15 @@
             border: 4px grey solid;
             border-radius: 5px;
             padding: 10px;
-            display: flex;
-            align-items: center;
         }
 
-        .middle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 50%;
-        }
+
 
         .ladyGalaxy {
             width: 30%;
 
         }
+
 
 
     }
@@ -60,5 +54,27 @@
             width: 24%;
 
         }
+
+        .logo {
+
+            display: flex;
+            align-self: last baseline;
+        }
     }
+
+    .middle {
+
+        display: flex;
+
+        .casePref {
+            margin-left: 15%;
+            border: 4px grey solid;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+    }
+
+
+
 }
