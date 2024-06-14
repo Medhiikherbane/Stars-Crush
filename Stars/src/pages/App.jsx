@@ -14,8 +14,12 @@ function App() {
     };
 
     newSocket.onmessage = (event) => {
-      const message = JSON.parse(event.data);
-      setMessages((prevMessages) => [...prevMessages, message]);
+      try {
+        const message = JSON.parse(event.data);
+        setMessages((prevMessages) => [...prevMessages, message]);
+      } catch (error) {
+        console.error('Error parsing message:', error);
+      }
     };
 
     newSocket.onclose = () => {
@@ -34,7 +38,7 @@ function App() {
   }, []);
 
   const sendMessage = () => {
-    if (messageInput.trim() !== '') {
+    if (messageInput.trim() !== '' && socket && socket.readyState === WebSocket.OPEN) {
       const message = {
         text: messageInput,
         timestamp: new Date().toISOString(),
@@ -70,3 +74,4 @@ function App() {
 }
 
 export default App;
+
