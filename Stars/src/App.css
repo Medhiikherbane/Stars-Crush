@@ -20,7 +20,9 @@
   padding: 20px;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* #parallaxContainer {
   overflow: hidden;
 }
