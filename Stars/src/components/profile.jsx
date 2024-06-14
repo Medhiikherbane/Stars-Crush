@@ -56,7 +56,7 @@ const Profile = () => {
       </div>
       <div className="profile-buttons">
         <button className="message-button">
-          <FontAwesomeIcon icon={faEnvelope} /> 
+          <FontAwesomeIcon icon={faEnvelope} />
         </button>
         <button className="like-button" onClick={() => handleLikeClick(profileData.name)}>
           <FontAwesomeIcon icon={faHeart} /> {likeCounts[profileData.name] || 0}

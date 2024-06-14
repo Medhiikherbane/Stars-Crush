@@ -1,0 +1,49 @@
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    /* Adjust as needed */
+}
+
+.selected-option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.popup {
+    position: absolute;
+    top: -300px;
+    left: 450px;
+    /* Adjust to fit next to the dropdown */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.popup img {
+    width: 400px;
+    /* Adjust the size as needed */
+    height: auto;
+}

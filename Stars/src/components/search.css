@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+#root {
+    width:100%;
+}
+
+
+.div_search {
+    width:100%;
+}
+
+=======
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -130,3 +141,4 @@ header {
 .like-button:hover {
   background-color: #e04050;
 }
+>>>>>>> dev

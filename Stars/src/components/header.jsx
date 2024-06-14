@@ -3,9 +3,9 @@ import "./header.css"
 import logoImage from "../Images/LogoOfficial.png"
 
 function Header() {
-    return (
-      <>
-       <nav className="navbar">
+  return (
+    <>
+      <nav className="navbar">
         <img className="logoNavbar" src={logoImage} alt="logo" />
         <ul className="link_page">
           <li className="link_item">
@@ -19,8 +19,8 @@ function Header() {
           </li>
         </ul>
       </nav>
-      </>
-    )
-  }
-  
-  export default Header
+    </>
+  )
+}
+
+export default Header

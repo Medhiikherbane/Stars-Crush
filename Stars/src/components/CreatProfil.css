@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+.bodyCreat {
+    margin: 0;
+    position: relative;
+    background-image: url('../Images/starsky.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    img {
+        width: 10%;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .top_Left {
+            margin-left: 15%;
+            border: 4px grey solid;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+
+
+        .ladyGalaxy {
+            width: 30%;
+
+        }
+
+
+
+    }
+
+
+    .bottom {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        margin-bottom: 0%;
+        align-items: center;
+
+        .manSit {
+            width: 24%;
+
+        }
+
+        .logo {
+
+            display: flex;
+            align-self: last baseline;
+        }
+    }
+
+    .middle {
+
+        display: flex;
+
+        .casePref {
+            margin-left: 15%;
+            border: 4px grey solid;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+    }
+
+
+
+}
