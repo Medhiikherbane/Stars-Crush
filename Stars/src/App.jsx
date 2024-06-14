@@ -1,4 +1,4 @@
-import React,{useState} from "React";
+import React,{useState} from "react";
 import './App.css';
 import img1 from './Images/img1.png'
 import img2 from './Images/img2.png'
