@@ -3,7 +3,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import Search from './components/search.jsx'
-import CharactersDetails from './components/detailcard.jsx'
+import Profile from './components/profile.jsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,9 +16,9 @@ const router = createBrowserRouter([
     element:<Search />
   },
   {
-    path: "/characters/:id",
-    element: <CharactersDetails />,
-  }
+    path: "/profile/:name",
+    element: <Profile />,
+  },
 
 ])
 
