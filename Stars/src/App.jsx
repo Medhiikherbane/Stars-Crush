@@ -9,10 +9,6 @@ function App() {
   return (
     <>
       <div>
-        <Link className="link_item_clic" to="/creatProfil" >Create your profil</Link>
-
-      </div>
-      <div>
         <Header />
       </div>
 
