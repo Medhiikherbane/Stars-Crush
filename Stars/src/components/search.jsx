@@ -9,7 +9,6 @@ import './search.css';
 const Search = () => {
   const [starwarsData, setStarwarsData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
-  const [likeCounts, setLikeCounts] = useState({});
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -18,13 +17,14 @@ const Search = () => {
       .then((result) => {
         setStarwarsData(result);
         setFilteredData(result);
-        const initialLikeCounts = result.reduce((acc, element) => {
-          acc[element.name] = 0;
-          return acc;
-        }, {});
-        setLikeCounts(initialLikeCounts);
       });
-  }, []); // <--- Empty dependency array to run only once
+  }, []);
+
+  useEffect(() => {
+    // Initialize likeCounts from localStorage
+    const likeCounts = JSON.parse(localStorage.getItem('likeCounts')) || {};
+    setLikeCounts(likeCounts);
+  }, []);
 
   const handleFilterChange = (filters) => {
     const { ageRange, selectedEyeColor, selectedGender, weightRange, heightRange, selectedLocation, selectedSpecies } = filters;
@@ -49,15 +49,17 @@ const Search = () => {
   };
 
   const handleLikeClick = (name) => {
-    setLikeCounts((prevCounts) => ({
-      ...prevCounts,
-      [name]: prevCounts[name] + 1,
-    }));
+    const likeCounts = JSON.parse(localStorage.getItem('likeCounts')) || {};
+    likeCounts[name] = (likeCounts[name] || 0) + 1;
+    localStorage.setItem('likeCounts', JSON.stringify(likeCounts));
+    setLikeCounts(likeCounts);
   };
 
   const handleCardClick = (name) => {
     navigate(`/profile/${name}`);
   };
+
+  const [likeCounts, setLikeCounts] = useState({});
 
   return (
     <div>
@@ -75,7 +77,7 @@ const Search = () => {
               <FontAwesomeIcon icon={faEnvelope} />
             </button>
             <button onClick={(e) => { e.stopPropagation(); handleLikeClick(element.name); }} className="like-button">
-              <FontAwesomeIcon icon={faHeart} /> {likeCounts[element.name]}
+              <FontAwesomeIcon icon={faHeart} /> {likeCounts[element.name] || 0}
             </button>
             <p>{element.name}</p>
           </div>
