@@ -1,44 +1,53 @@
+import React from 'react';
+import CustomDropdown from './CustomeDropdown';
 
-function Preference() {
+const raceOptions = [
+    { value: '0', label: "What race do you'd like?", image: '' },
+    { value: '1', label: 'Human', image: '/src/Images/Human.jpg' },
+    { value: '2', label: "Twi'lek", image: '/src/Images/TwiLek.jpg' },
+    { value: '3', label: 'Muun', image: '/src/Images/Muun.jpg' },
+    { value: '4', label: 'Hutt', image: '/src/Images/Hutt.jpg' },
+    { value: '5', label: 'Wookie', image: '/src/Images/wookie.jpg' },
+    { value: '6', label: 'Ewok', image: '/src/Images/Ewok.jpg' },
+    { value: '7', label: 'Robot', image: '/src/Images/Robotsexy.jpg' },
+    { value: '8', label: "I'm not difficult", image: '' },
+];
+
+const orientationOptions = [
+    { value: '0', label: 'Sexual orientation', image: '' },
+    { value: '1', label: 'Straight', image: '/src/Images/Straight.png' },
+    { value: '2', label: 'Homosexual', image: '/src/Images/homo.png' },
+    { value: '3', label: 'Bisexual', image: '/src/Images/Bi.png' },
+    { value: '4', label: 'Fissionsexual', image: '/src/Images/fissionsexual.jpg' },
+    { value: '5', label: 'Technosexual', image: '/src/Images/technosexual.jpg' },
+    { value: '6', label: "I'm not difficult", image: '' },
+];
+
+const planetOptions = [
+    { value: '0', label: 'Planet preferred', image: '' },
+    { value: '1', label: 'Tatooine', image: '/src/Images/Tatoooinefull.webp' },
+    { value: '2', label: 'Hoth', image: '/src/Images/Hothplanet.webp' },
+    { value: '3', label: 'Endor', image: '/src/Images/Endor_(planet).webp' },
+    { value: '4', label: 'Naboo', image: '/src/Images/Naboo.png' },
+    { value: '5', label: 'Coruscant', image: '/src/Images/Coruscant.webp' },
+    { value: '6', label: 'Anywhere', image: '' },
+];
+
+const Preference = () => {
     return (
         <section className="Preference">
-            <div className="race-select">
-                <select>
-                    <option value="0">What race do you like?</option>
-                    <option value="1">Human</option>
-                    <option value="2">Twi'lek</option>
-                    <option value="3">Muun</option>
-                    <option value="4">Hutt</option>
-                    <option value="5">Wookie</option>
-                    <option value="6">Ewok</option>
-                    <option value="7">I'm not difficult</option>
-                </select>
+            <div className="dropdown-select">
+                <CustomDropdown options={raceOptions} label="What race do you like?" />
             </div>
-            <div className="Sexe-select">
-                <select>
-                    <option value="0">Sexual orientation</option>
-                    <option value="1">Straight</option>
-                    <option value="2">Homosexual</option>
-                    <option value="3">Bissexual</option>
-                    <option value="4">Fissionsexual</option>
-                    <option value="4">Technosexual</option>
-                    <option value="4">I'm not difficult</option>
-                </select>
+            <div className="dropdown-select">
+                <CustomDropdown options={orientationOptions} label="Sexual orientation" />
             </div>
-            <div className="Planet-select">
-                <select>
-                    <option value="0">Planet prefered</option>
-                    <option value="1">Tatooine</option>
-                    <option value="2">Hoth</option>
-                    <option value="3">Endor</option>
-                    <option value="4">Naboo</option>
-                    <option value="4">Coruscant</option>
-                    <option value="4">Anywhere</option>
-                </select>
+            <div className="dropdown-select">
+                <CustomDropdown options={planetOptions} label="Planet preferred" />
             </div>
         </section>
+    );
+};
 
-    )
-}
 
 export default Preference
