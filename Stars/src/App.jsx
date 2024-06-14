@@ -1,15 +1,19 @@
-import React,{useState} from "react";
-import './App.css';
-import img1 from '../public/Images/Naboo2.png'
-import img2 from '../public/Images/Xwing-Starfighter.webp'
-import text from '../public/Images/text.png'
-import Planet from "./components/Planet";
+import { useState } from 'react'
+import Header from './components/header'
+import './App.css'
+import React from 'react'
+import { Link } from "react-router-dom"
 function App() {
-  
-    return (
-        <Planet/>
-       
-    )
+
+
+  return (
+    <>
+      <div>
+        <Header />
+      </div>
+
+    </>
+  )
 }
 
 
